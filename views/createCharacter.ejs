@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Outcast</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Unica+One&display=swap" rel="stylesheet">
+    <style> body { font-family: 'Special Elite', monospace; } .navbar-brand, h1 { font-family: 'Unica One', cursive; } </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/characters">🕷️ NEVERMORE</a>
+            <a href="/auth/logout" class="btn btn-outline-light">Logout</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="mb-4">New Admission</h1>
+        <form action="/characters/create" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="species" class="form-label">Species:</label>
+                <input type="text" id="species" name="species" class="form-control" placeholder="e.g., Werewolf, Vampire, Normie">
+            </div>
+            <div class="mb-3">
+                <label for="ability" class="form-label">Ability:</label>
+                <input type="text" id="ability" name="ability" class="form-control" placeholder="e.g., Psychic, Shapeshifting">
+            </div>
+            <button type="submit" class="btn btn-light">Add Outcast</button>
+            <a href="/characters" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

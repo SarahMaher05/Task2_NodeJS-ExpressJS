@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevermore Academy - Register</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/wednesday.css">
+</head>
+<body>
+
+    <div class="login-container">
+        
+        <form action="/auth/register" method="POST" class="login-form">
+            
+            <div class="form-logo">🕷️</div> <h1 class="form-title">NEW ADMISSION</h1>
+            <p class="form-subtitle">"We are all outcasts. Together."</p>
+            
+            <div class="input-group">
+                <input type="text" id="username" name="username" class="form-input" required autocomplete="off" placeholder=" ">
+                <label for="username" class="form-label">Your Name</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" name="password" class="form-input" required placeholder=" ">
+                <label for="password" class="form-label">Create Secret Code</label>
+            </div>
+            
+            <button type="submit" class="cta-button">
+                <span>Submit Application</span>
+            </button>
+            
+            <p class="form-footer">
+                Already an outcast? <a href="/auth/login">Login here</a>
+            </p>
+
+           
+
+        </form>
+    </div>
+
+</body>
+</html>

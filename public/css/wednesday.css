@@ -1,0 +1,148 @@
+/* public/css/wednesday.css (Version 2 - Darkly Matched) */
+
+
+body {
+    background-color: #222222; 
+    font-family: 'Special Elite', monospace; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #f8f9fa; 
+}
+
+
+.login-container {
+    background: #212529; 
+    border: 2px solid #6c757d; 
+    border-radius: 8px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); 
+    padding: 3rem 3.5rem;
+    width: 450px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.form-logo {
+    font-size: 3.5rem; 
+    margin-bottom: 0.5rem;
+    color: #f8f9fa; 
+    text-shadow: 0 0 10px rgba(248, 249, 250, 0.5); 
+}
+
+
+.form-title {
+    font-family: 'Unica One', cursive; 
+    color: #f8f9fa; 
+    font-size: 2.2rem; 
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.form-subtitle {
+    font-size: 1rem;
+    color: #adb5bd; 
+    margin-bottom: 2.5rem;
+    font-family: 'Special Elite', monospace;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 1rem;
+    font-family: 'Special Elite', monospace;
+    color: #f8f9fa; 
+    border: 1px solid #495057; 
+    border-radius: 5px;
+    outline: none;
+    background: #343a40; 
+    transition: all 0.3s ease;
+}
+
+.form-label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 1rem;
+    color: #adb5bd; 
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background: #343a40; 
+    padding: 0 5px;
+}
+
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: -10px; 
+    left: 10px;
+    font-size: 0.85rem;
+    color: #f8f9fa; 
+}
+
+.form-input:focus {
+    border-color: #adb5bd; 
+    background: #212529; 
+}
+
+
+.cta-button {
+    background: #f8f9fa; 
+    color: #212529; 
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Unica One', cursive;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: #adb5bd; 
+    color: #212529; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+.form-footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #adb5bd;
+}
+
+.form-footer a {
+    color: #e9ecef;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+    color: #f8f9fa;
+}
+
+.credit-footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #6c757d; 
+}
