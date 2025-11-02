@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependencies
 /node_modules
 /.pnp
@@ -11,4 +12,10 @@
 /dist
 
 # dotenv environment variables
+=======
+# Node modules
+node_modules
+
+# Environment variables
+>>>>>>> 9256669d06a492c9639bcef3278566c25f1c97e1
 .env

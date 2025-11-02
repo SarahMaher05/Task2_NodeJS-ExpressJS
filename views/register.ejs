@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Nevermore Academy - Register</title>
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕷️</text></svg>">
@@ -44,3 +45,34 @@
 
 </body>
 </html>
+=======
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="reg">
+        <h1>Register</h1>
+
+        <% if (errorMsg) { %>
+             <div style="background-color:#f8d7da;color:#721c24;padding:10px;margin-bottom:15px;border-radius:5px;">
+                 <%= errorMsg %>
+             </div>
+        <% } %>
+
+        <form action="/register" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p style="margin-top: 15px;">
+            Already have an account? <a href="/login" class="link">Login here</a>
+        </p>
+    </div>
+</body>
+</html>
+>>>>>>> 9256669d06a492c9639bcef3278566c25f1c97e1
